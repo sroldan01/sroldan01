@@ -1,0 +1,149 @@
+/* Página Maquillaje */
+
+.tituloMaquillaje {
+  @extend .textShadow;
+  font-size: 50px;
+  font-style: italic;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+}
+
+/* Inicio Grid */
+
+.gridMaquillaje {
+  width: 90%;
+  height: auto;
+  background-color: #df1d4c;
+  display: grid;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.item {
+  min-height: 250px;
+  min-width: 200px;
+  background-color: rgb(167, 9, 43);
+  border: 1px solid rgb(180, 10, 67);
+}
+
+.item:hover {
+  transform: scale(1.2);
+  transition: 0.9s;
+  filter: hue-rotate(200deg);
+}
+
+.imagen1 {
+  grid-area: "item1";
+  grid-column: 1;
+  grid-row: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-image: url("archivos multimedia/grids/imagen1.JPG");
+  background-position: center;
+  background-size: cover;
+}
+
+.imagen2 {
+  grid-area: "item2";
+  background-image: url("archivos multimedia/grids/imagen3.jpg");
+  background-size: cover;
+}
+
+.imagen3 {
+  grid-area: "item3";
+  grid-column: 2;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  background-image: url("archivos multimedia/grids/imagen2.jpg");
+  background-size: cover;
+}
+
+.imagen4 {
+  grid-area: "item4";
+  grid-row: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background-image: url("archivos multimedia/grids/imagen4.jpg");
+  background-size: cover;
+}
+
+.imagen5 {
+  grid-area: "item5";
+
+  background-image: url("archivos multimedia/grids/imagen5.jpg");
+  background-size: cover;
+}
+
+.imagen6 {
+  grid-area: "item6";
+
+  background-image: url("archivos multimedia/grids/imagen8.png");
+  background-size: cover;
+}
+
+.imagen7 {
+  grid-area: "item7";
+  background-image: url("archivos multimedia/grids/imagen7.jpg");
+  background-size: cover;
+}
+
+.imagen8 {
+  grid-area: "item8";
+  grid-column: 2;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  background-image: url("archivos multimedia/grids/imagen6.png");
+  background-size: cover;
+}
+
+/* Fin Grid */
+
+/* Inicio Tabla Maquillaje */
+
+.tablaMaquillaje {
+  @extend .textShadow;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@each $producto in gloss,
+lipstick,
+sombras,
+blush {
+  .producto-#{$producto} {
+    background-image: url("archivos multimedia/imagenes Maquillaje/#{$producto}.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.tablaMaquillaje td:nth-child(2) {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.tablaMaquillaje td:nth-child(3) {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.tablaMaquillaje td:nth-child(4) {
+  font-size: 0.9rem;
+  list-style: url("archivos multimedia/lapiz-labial.png");
+  width: 8%;
+}
+
+.tablaMaquillaje td:nth-child(5) {
+  font-size: 0.9rem;
+}
+
+.tablaMaquillaje td:nth-child(6) {
+  text-align: center;
+  font-size: 1rem;
+  width: 10%;
+}
+
+/* Fin Tabla Maquillaje */

@@ -1,0 +1,78 @@
+/* Página Fragancias */
+
+$var1: 90px;
+
+.tituloFragancias {
+  @extend .textShadow;
+  font-size: 50px;
+  font-style: italic;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+}
+
+.imagenes {
+  width: 100%;
+
+  img {
+    width: $width/4;
+    opacity: 70%;
+    border-style: outset;
+    border-color: #da1540;
+  }
+}
+
+@for $i from 1 through 4 {
+  .imagenes-#{$i} {
+    height: $var1 + ($var1 * $i);
+  }
+}
+
+/* Fin Sección Fragancias Bucle */
+
+/* Inicio Tabla Fragancias */
+
+.tablaFragancias {
+  @extend .textShadow;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@each $fragancia in Girl,
+Jasmine,
+LaBelle,
+Olympea {
+  .fragancia-#{$fragancia} {
+    background-image: url("archivos multimedia/imagenes fragancias/#{$fragancia}.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.tablaFragancias td:nth-child(2) {
+  text-align: center;
+  font-size: 0.9rem;
+  width: 15%;
+}
+
+.tablaFragancias td:nth-child(3) {
+  text-align: center;
+  font-size: 0.9rem;
+  width: 40%;
+}
+
+.tablaFragancias td:nth-child(4) {
+  text-align: left;
+  font-size: 0.9rem;
+  list-style: square inside url("archivos multimedia/perfume.png");
+  list-style-position: outside;
+  width: 15%;
+}
+
+.tablaFragancias td:nth-child(5) {
+  text-align: center;
+  font-size: 1rem;
+  width: 10%;
+}
+
+/* Fin Tabla Fragancias */

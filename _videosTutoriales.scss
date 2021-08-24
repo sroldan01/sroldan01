@@ -1,0 +1,84 @@
+/* Página Videos Tutoriales */
+
+@for $in from 1 through 3 {
+  .seccionTutoriales-#{$in} {
+    background-color: lighten($colorseccionrosa, $in * 7%);
+  }
+}
+
+.seccionVideosTutoriales {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+.tituloVideosTutoriales {
+  @extend .textShadow;
+  font-size: 50px;
+  font-style: italic;
+  padding-top: 1%;
+  padding-left: 5%;
+  padding-bottom: 1%;
+}
+
+/* Inicio Sección Videos de Maquillaje */
+
+.seccionTutorialesMaquillaje {
+  border-bottom-style: solid;
+  border-top-style: solid;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  h3 {
+    @extend .textShadow;
+    text-align: center;
+    font-size: 35px;
+    font-style: italic;
+    padding-top: 6%;
+  }
+}
+
+/* Fin Sección Videos de Maquillaje */
+
+/* Inicio Sección Videos de Fragancias */
+
+.seccionTutorialesFragancias {
+  border-bottom-style: solid;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  h3 {
+    @extend .textShadow;
+    text-align: center;
+    font-size: 35px;
+    font-style: italic;
+    padding-top: 6%;
+    order: 4;
+  }
+}
+
+/* Fin Sección Videos de Fragancias */
+
+/* Inicio Sección Videos de Skincare */
+
+.seccionTutorialesSkincare {
+  border-bottom-style: solid;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  h3 {
+    @extend .textShadow;
+    text-align: center;
+    font-size: 35px;
+    font-style: italic;
+    padding-top: 6%;
+  }
+}
+
+/* Fin Sección Videos de Skincare */

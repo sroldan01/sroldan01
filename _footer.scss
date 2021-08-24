@@ -1,0 +1,133 @@
+/* Sección Footer */
+
+footer {
+  height: 430px;
+}
+
+/* Inicio Footer Sección Suscripción */
+
+.footerSuscripcion {
+  width: 100%;
+  height: 160px;
+  background: linear-gradient($colorseccionrosa 30%, $colorseccionverde);
+  border-bottom-style: solid;
+}
+
+.footerSuscripcionIzquierda {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.footerSuscripcionIzquierda__h3 {
+  width: 100%;
+  height: 50%;
+  font-size: 30px;
+  text-shadow: 1px 1px 2px #000000;
+  font-style: italic;
+  text-align: center;
+  line-height: 70px;
+}
+
+.footerSuscripcionIzquierda__p {
+  @extend .textShadow;
+  width: 100%;
+  height: 50%;
+  font-size: 15px;
+  text-align: center;
+}
+
+.footerSuscripcionDerecha {
+  width: 50%;
+  height: 35%;
+  float: right;
+}
+
+.email {
+  width: 400px;
+  padding: 9px;
+  margin-left: 60px;
+  margin-top: 50px;
+}
+
+.botonSubmit {
+  width: 100px;
+  height: 44.5px;
+  margin-top: -5px;
+}
+
+/* Fin Footer Sección Suscripción */
+
+/* Inicio Footer Sección Servicios */
+
+.footerServicios {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom-style: solid;
+  font-style: italic;
+}
+
+.contenidoItem {
+  color: $color2;
+
+  h3 {
+    @extend .textShadow;
+    color: $color2;
+    padding-left: 5px;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    color: $color2;
+    list-style-type: none;
+
+    li {
+      @extend .textShadow;
+      padding-bottom: 2px;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+/* Fin Footer Sección Servicios */
+
+/* Inicio Footer Sección Redes Sociales */
+
+.footerRedes {
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+
+.footerRedesIzquierda {
+  width: 50%;
+  height: 100%;
+  background: linear-gradient($colorseccionverde 20%, $colorseccionrosa);
+}
+
+.footerRedesIzquierda__p {
+  padding-left: 5%;
+  padding-top: 1%;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.footerRedesDerecha {
+  width: 50%;
+  height: 100%;
+  background: linear-gradient($colorseccionverde 20%, $colorseccionrosa);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  img {
+    height: 30px;
+    padding: .3rem;
+    margin-right: 5%;
+  }
+}
+
+/* Fin Footer Sección Redes Sociales */

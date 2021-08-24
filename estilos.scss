@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+$color1: #fd2913;
+$color2: #fd1515;
+$colorseccionrosa: hsl(6, 78%, 66%);
+$colorseccionverde: #53DCD2;
+$width: 100%;
+
+@media (max-width: 576px) {
+  .seccionNuevoLanzamiento__h3--color {
+    color: #1404ff;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .seccionNuevoLanzamiento__h3--color {
+    color: #00ffb3;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .seccionNuevoLanzamiento__h3--color {
+    color: $color2;
+  }
+}
+
+/* Inicio CSS Genérico */
+
+/* Mapa Colores */
+
+$nombreProducto: (
+  colorProducto1: #fd1515,
+  colorProducto2: #48C9B0,
+  colorProducto3: #ffaeae);
+
+@each $colorProducto, $color in $nombreProducto {
+  .btn--#{$colorProducto} {
+    color: $color;
+    text-shadow: 1px 1px 2px #000000;
+    font-size: 1.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+    border-top-color: black;
+    border-bottom-color: black;
+  }
+}
+
+.textShadow {
+  text-shadow: 1px 1px 4px #000000;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: url("archivos multimedia/fondoPagina.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fdfefe;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+h2,
+h3 {
+  color: $color2;
+}
+
+ul {
+  list-style-position: inside;
+  padding-top: 0px;
+  padding-right: 5px;
+  padding-bottom: 0px;
+  padding-left: 5px;
+}
+
+ol {
+  list-style-position: inside;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  text-align: center;
+}
+
+li {
+  align-content: center;
+}
+
+.seccionTabla {
+  border-bottom-style: solid;
+}
+
+table {
+  border: 0px;
+
+
+  img {
+    width: 100px;
+    height: 50 px;
+  }
+
+  th {
+    background-color: #df1d4c;
+    border: 1px solid;
+    color: #fdfefe;
+    font-size: 18px;
+    text-align: center;
+    border: 0;
+  }
+
+  td {
+    border: 1px solid;
+    padding-top: 20px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: #ffe6e3;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #e7fffa;
+  }
+}
+
+table img:hover {
+  transform: scale(1.2);
+}
+
+
+/* Fin CSS Genérico */
+
+@import "_header";
+@import "_footer";
+@import "_index";
+@import "_maquillaje";
+@import "_fragancias";
+@import "_videosTutoriales";
+@import "_skincare";
+@import "_contacto";
+@import "_error404";

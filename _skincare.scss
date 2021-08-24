@@ -1,0 +1,56 @@
+/* Página Skincare */
+
+.tituloSkincare {
+  @extend .textShadow;
+  font-size: 50px;
+  font-style: italic;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+}
+
+/* Inicio Tabla Skincare */
+
+.tablaSkincare {
+  @extend .textShadow;
+  width: 70%;
+  margin: 0 auto;
+}
+
+@each $skincare in aguaMicelar,
+exfoliante,
+máscaraFacial,
+toallasDesmaquillantes {
+  .skincare-#{$skincare} {
+    background-image: url("archivos multimedia/imagenes skincare/#{$skincare}.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.tablaSkincare td:nth-child(1) {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.tablaSkincare td:nth-child(2) {
+  text-align: center;
+  font-size: 0.9rem;
+  width: 25%;
+}
+
+.tablaSkincare td:nth-child(3) {
+  text-align: center;
+  font-size: 0.9rem;
+  width: 40%;
+}
+
+.tablaSkincare td:nth-child(4) {
+  text-align: center;
+  font-size: 1rem;
+  width: 10%;
+}
+
+/* Fin Tabla Skincare */

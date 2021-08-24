@@ -1,0 +1,176 @@
+/* Página Inicial */
+
+/* Inicio Sección Nuevo Lanzamiento */
+
+.seccionNuevoLanzamiento {
+  background-color: $colorseccionrosa;
+  width: 100%;
+  height: 500px;
+  border-bottom-style: solid;
+  display: flex;
+
+  div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    p {
+      @extend .textShadow;
+      font-size: 21px;
+      padding-top: 5%;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+}
+
+.seccionNuevoLanzamientoImagen--width {
+  width: 100%;
+}
+
+.seccionNuevoLanzamientoImagen__img--height {
+  height: 498px;
+}
+
+.seccionNuevoLanzamiento img:hover {
+  transform: scale(0.8);
+}
+
+.seccionNuevoLanzamiento__h2 {
+  @extend .textShadow;
+  font-size: 50px;
+  font-style: italic;
+  padding-top: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* Fin Sección Nuevo Lanzamiento */
+
+/* Inicio Sección Productos Principales */
+
+.seccionPrincipalesProductos {
+  background-color: $colorseccionrosa;
+  width: 100%;
+  height: 800px;
+  border-bottom-style: solid;
+  position: relative;
+}
+
+.seccionPrincipalesProductos__h2 {
+  @extend .textShadow;
+  font-size: 45px;
+  font-style: italic;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 35%;
+}
+
+.contenedorImagenesPrincipales {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.contenedorProductoGloss {
+  width: 40%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.contenedorProductoGloss__img {
+  width: 480px;
+  height: 500px;
+  display: block;
+  margin: auto;
+  border-style: outset;
+  border-color: #da1540;
+}
+
+.contenedorProductoGloss__h3 {
+  @extend .textShadow;
+  text-align: center;
+  font-size: 35px;
+  font-style: italic;
+  padding-top: 3%;
+}
+
+.contenedorProductoGloss__p {
+  @extend .textShadow;
+  text-align: center;
+  font-size: 18px;
+  padding-right: 20%;
+  padding-left: 20%;
+  padding-top: 2%;
+}
+
+.contenedorProductoFragancia {
+  width: 50%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.contenedorProductoFragancia__img {
+  width: 65%;
+  height: 500px;
+  display: block;
+  margin: auto;
+  border-style: outset;
+  border-color: #da1540;
+}
+
+.contenedorProductoFragancia__h3 {
+  @extend .textShadow;
+  text-align: center;
+  font-size: 35px;
+  font-style: italic;
+  padding-top: 3%;
+}
+
+.contenedorProductoFragancia__p {
+  @extend .textShadow;
+  text-align: center;
+  font-size: 18px;
+  padding-right: 20%;
+  padding-left: 20%;
+  padding-top: 2%;
+}
+
+/* Fin Sección Productos Principales */
+
+/* Inicio Sección Videos Tutoriales */
+
+.seccionVideosTutoriales {
+  border-bottom-style: solid;
+
+  div {
+    width: auto;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: space-evenly;
+
+    iframe {
+      width: 450px;
+      height: 300px;
+      display: inline;
+      align-items: center;
+    }
+  }
+}
+
+.seccionVideosTutoriales__h2 {
+  @extend .textShadow;
+  font-size: 45px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 39%;
+  font-style: italic;
+}
+
+/* Fin Sección Videos Tutoriales */

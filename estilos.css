@@ -1,0 +1,1267 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 576px) {
+  .seccionNuevoLanzamiento__h3--color {
+    color: #1404ff;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .seccionNuevoLanzamiento__h3--color {
+    color: #00ffb3;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .seccionNuevoLanzamiento__h3--color {
+    color: #fd1515;
+  }
+}
+
+/* Inicio CSS Genérico */
+/* Mapa Colores */
+.btn--colorProducto1 {
+  color: #fd1515;
+  text-shadow: 1px 1px 2px #000000;
+  font-size: 1.3rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+  border-top-color: black;
+  border-bottom-color: black;
+}
+
+.btn--colorProducto2 {
+  color: #48C9B0;
+  text-shadow: 1px 1px 2px #000000;
+  font-size: 1.3rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+  border-top-color: black;
+  border-bottom-color: black;
+}
+
+.btn--colorProducto3 {
+  color: #ffaeae;
+  text-shadow: 1px 1px 2px #000000;
+  font-size: 1.3rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+  border-top-color: black;
+  border-bottom-color: black;
+}
+
+.textShadow, .footerSuscripcionIzquierda__p, .contenidoItem h3, .contenidoItem ul li, .seccionNuevoLanzamiento div p, .seccionNuevoLanzamiento__h2, .seccionPrincipalesProductos__h2, .contenedorProductoGloss__h3, .contenedorProductoGloss__p, .contenedorProductoFragancia__h3, .contenedorProductoFragancia__p, .seccionVideosTutoriales__h2, .tituloMaquillaje, .tablaMaquillaje, .tituloFragancias, .tablaFragancias, .tituloVideosTutoriales, .seccionTutorialesMaquillaje h3, .seccionTutorialesFragancias h3, .seccionTutorialesSkincare h3, .tituloSkincare, .tablaSkincare, .tituloContacto, .carousel-caption, .carousel-caption p, .subtituloContacto, .seccionContacto-1, .seccionContacto-1 ul li, .seccionContacto-2, .info {
+  text-shadow: 1px 1px 4px #000000;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: url("archivos multimedia/fondoPagina.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fdfefe;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+h2,
+h3 {
+  color: #fd1515;
+}
+
+ul {
+  list-style-position: inside;
+  padding-top: 0px;
+  padding-right: 5px;
+  padding-bottom: 0px;
+  padding-left: 5px;
+}
+
+ol {
+  list-style-position: inside;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  text-align: center;
+}
+
+li {
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.seccionTabla {
+  border-bottom-style: solid;
+}
+
+table {
+  border: 0px;
+}
+
+table img {
+  width: 100px;
+  height: 50 px;
+}
+
+table th {
+  background-color: #df1d4c;
+  border: 1px solid;
+  color: #fdfefe;
+  font-size: 18px;
+  text-align: center;
+  border: 0;
+}
+
+table td {
+  border: 1px solid;
+  padding-top: 20px;
+  padding-right: 5px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+  border-left: 0;
+  border-right: 0;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #ffe6e3;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #e7fffa;
+}
+
+table img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+/* Fin CSS Genérico */
+/* Sección Header */
+/* Inicio Header Superior */
+header {
+  width: 100%;
+  height: auto;
+  border-bottom-style: solid;
+}
+
+.headerSuperior {
+  width: 100%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.headerSuperior__img {
+  width: 30px;
+  height: 30px;
+  margin-right: 2%;
+  margin-top: 0.5%;
+}
+
+/* Fin Header Superior */
+/* Inicio Header Central */
+.headerCentral--tamaño {
+  width: 100%;
+  height: 98px;
+}
+
+.headerCentral--tamaño span {
+  float: left;
+  width: 20%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headerCentral__a--aling {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headerCentral__img--witdh {
+  width: 170px;
+  height: 100px;
+}
+
+.headerCentral__img--height {
+  height: 100px;
+}
+
+.headerCentral__img--witdh:hover {
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+}
+
+#nombreEmpresa {
+  font-family: "Michroma", sans-serif;
+  color: #fd2913;
+  font-weight: 60;
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+  float: right;
+  width: 80%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+/* Fin Header Central */
+/* Inicio Header Inferior */
+.nav {
+  display: inline-block;
+}
+
+.menu {
+  color: #fd2913;
+  text-shadow: 1px 1px 2px #000000;
+  font-style: italic;
+  text-align: center;
+}
+
+.menuPrincipalNavegable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.menuPrincipalNavegable ul {
+  position: absolute;
+  display: none;
+}
+
+.menuPrincipalNavegable li a {
+  color: #fd1515;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fadbd8;
+  display: block;
+}
+
+.menuPrincipalNavegable ul li {
+  display: block;
+  background-color: #000;
+  text-align: center;
+}
+
+.nav-link {
+  color: #fd1515 !important;
+}
+
+.navbar-brand {
+  color: #fd1515 !important;
+}
+
+/* acá para el submenu */
+.menuPrincipalNavegable li:hover ul {
+  display: block;
+}
+
+.menuPrincipalNavegable li a:hover {
+  color: #53DCD2;
+  background-color: #ffaeae;
+}
+
+.menuOpciones {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #fd1515;
+}
+
+.search {
+  width: 200px;
+  height: 30px;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+.search input {
+  border: 1px solid;
+}
+
+.search button {
+  text-align: center;
+  padding-top: 0%;
+}
+
+/* Fin Header Inferior */
+/* Sección Footer */
+footer {
+  height: 430px;
+}
+
+/* Inicio Footer Sección Suscripción */
+.footerSuscripcion {
+  width: 100%;
+  height: 160px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #ec7265), to(#53DCD2));
+  background: linear-gradient(#ec7265 30%, #53DCD2);
+  border-bottom-style: solid;
+}
+
+.footerSuscripcionIzquierda {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.footerSuscripcionIzquierda__h3 {
+  width: 100%;
+  height: 50%;
+  font-size: 30px;
+  text-shadow: 1px 1px 2px #000000;
+  font-style: italic;
+  text-align: center;
+  line-height: 70px;
+}
+
+.footerSuscripcionIzquierda__p {
+  width: 100%;
+  height: 50%;
+  font-size: 15px;
+  text-align: center;
+}
+
+.footerSuscripcionDerecha {
+  width: 50%;
+  height: 35%;
+  float: right;
+}
+
+.email {
+  width: 400px;
+  padding: 9px;
+  margin-left: 60px;
+  margin-top: 50px;
+}
+
+.botonSubmit {
+  width: 100px;
+  height: 44.5px;
+  margin-top: -5px;
+}
+
+/* Fin Footer Sección Suscripción */
+/* Inicio Footer Sección Servicios */
+.footerServicios {
+  width: 100%;
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom-style: solid;
+  font-style: italic;
+}
+
+.contenidoItem {
+  color: #fd1515;
+}
+
+.contenidoItem h3 {
+  color: #fd1515;
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+
+.contenidoItem ul {
+  color: #fd1515;
+  list-style-type: none;
+}
+
+.contenidoItem ul li {
+  padding-bottom: 2px;
+  font-size: 1.2rem;
+}
+
+/* Fin Footer Sección Servicios */
+/* Inicio Footer Sección Redes Sociales */
+.footerRedes {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footerRedesIzquierda {
+  width: 50%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #53DCD2), to(#ec7265));
+  background: linear-gradient(#53DCD2 20%, #ec7265);
+}
+
+.footerRedesIzquierda__p {
+  padding-left: 5%;
+  padding-top: 1%;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.footerRedesDerecha {
+  width: 50%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #53DCD2), to(#ec7265));
+  background: linear-gradient(#53DCD2 20%, #ec7265);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footerRedesDerecha img {
+  height: 30px;
+  padding: .3rem;
+  margin-right: 5%;
+}
+
+/* Fin Footer Sección Redes Sociales */
+/* Página Inicial */
+/* Inicio Sección Nuevo Lanzamiento */
+.seccionNuevoLanzamiento {
+  background-color: #ec7265;
+  width: 100%;
+  height: 500px;
+  border-bottom-style: solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.seccionNuevoLanzamiento div {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.seccionNuevoLanzamiento div p {
+  font-size: 21px;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.seccionNuevoLanzamientoImagen--width {
+  width: 100%;
+}
+
+.seccionNuevoLanzamientoImagen__img--height {
+  height: 498px;
+}
+
+.seccionNuevoLanzamiento img:hover {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.seccionNuevoLanzamiento__h2 {
+  font-size: 50px;
+  font-style: italic;
+  padding-top: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* Fin Sección Nuevo Lanzamiento */
+/* Inicio Sección Productos Principales */
+.seccionPrincipalesProductos {
+  background-color: #ec7265;
+  width: 100%;
+  height: 800px;
+  border-bottom-style: solid;
+  position: relative;
+}
+
+.seccionPrincipalesProductos__h2 {
+  font-size: 45px;
+  font-style: italic;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 35%;
+}
+
+.contenedorImagenesPrincipales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contenedorProductoGloss {
+  width: 40%;
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.contenedorProductoGloss__img {
+  width: 480px;
+  height: 500px;
+  display: block;
+  margin: auto;
+  border-style: outset;
+  border-color: #da1540;
+}
+
+.contenedorProductoGloss__h3 {
+  text-align: center;
+  font-size: 35px;
+  font-style: italic;
+  padding-top: 3%;
+}
+
+.contenedorProductoGloss__p {
+  text-align: center;
+  font-size: 18px;
+  padding-right: 20%;
+  padding-left: 20%;
+  padding-top: 2%;
+}
+
+.contenedorProductoFragancia {
+  width: 50%;
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.contenedorProductoFragancia__img {
+  width: 65%;
+  height: 500px;
+  display: block;
+  margin: auto;
+  border-style: outset;
+  border-color: #da1540;
+}
+
+.contenedorProductoFragancia__h3 {
+  text-align: center;
+  font-size: 35px;
+  font-style: italic;
+  padding-top: 3%;
+}
+
+.contenedorProductoFragancia__p {
+  text-align: center;
+  font-size: 18px;
+  padding-right: 20%;
+  padding-left: 20%;
+  padding-top: 2%;
+}
+
+/* Fin Sección Productos Principales */
+/* Inicio Sección Videos Tutoriales */
+.seccionVideosTutoriales {
+  border-bottom-style: solid;
+}
+
+.seccionVideosTutoriales div {
+  width: auto;
+  padding-bottom: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.seccionVideosTutoriales div iframe {
+  width: 450px;
+  height: 300px;
+  display: inline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.seccionVideosTutoriales__h2 {
+  font-size: 45px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 39%;
+  font-style: italic;
+}
+
+/* Fin Sección Videos Tutoriales */
+/* Página Maquillaje */
+.tituloMaquillaje {
+  font-size: 50px;
+  font-style: italic;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+}
+
+/* Inicio Grid */
+.gridMaquillaje {
+  width: 90%;
+  height: auto;
+  background-color: #df1d4c;
+  display: -ms-grid;
+  display: grid;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.item {
+  min-height: 250px;
+  min-width: 200px;
+  background-color: #a7092b;
+  border: 1px solid #b40a43;
+}
+
+.item:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  -webkit-filter: hue-rotate(200deg);
+          filter: hue-rotate(200deg);
+}
+
+.imagen1 {
+  grid-area: "item1";
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-image: url("archivos multimedia/grids/imagen1.JPG");
+  background-position: center;
+  background-size: cover;
+}
+
+.imagen2 {
+  grid-area: "item2";
+  background-image: url("archivos multimedia/grids/imagen3.jpg");
+  background-size: cover;
+}
+
+.imagen3 {
+  grid-area: "item3";
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 5;
+  background-image: url("archivos multimedia/grids/imagen2.jpg");
+  background-size: cover;
+}
+
+.imagen4 {
+  grid-area: "item4";
+  -ms-grid-row: 2;
+  grid-row: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background-image: url("archivos multimedia/grids/imagen4.jpg");
+  background-size: cover;
+}
+
+.imagen5 {
+  grid-area: "item5";
+  background-image: url("archivos multimedia/grids/imagen5.jpg");
+  background-size: cover;
+}
+
+.imagen6 {
+  grid-area: "item6";
+  background-image: url("archivos multimedia/grids/imagen8.png");
+  background-size: cover;
+}
+
+.imagen7 {
+  grid-area: "item7";
+  background-image: url("archivos multimedia/grids/imagen7.jpg");
+  background-size: cover;
+}
+
+.imagen8 {
+  grid-area: "item8";
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 5;
+  background-image: url("archivos multimedia/grids/imagen6.png");
+  background-size: cover;
+}
+
+/* Fin Grid */
+/* Inicio Tabla Maquillaje */
+.tablaMaquillaje {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.producto-gloss {
+  background-image: url("archivos multimedia/imagenes Maquillaje/gloss.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.producto-lipstick {
+  background-image: url("archivos multimedia/imagenes Maquillaje/lipstick.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.producto-sombras {
+  background-image: url("archivos multimedia/imagenes Maquillaje/sombras.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.producto-blush {
+  background-image: url("archivos multimedia/imagenes Maquillaje/blush.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.tablaMaquillaje td:nth-child(2) {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.tablaMaquillaje td:nth-child(3) {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.tablaMaquillaje td:nth-child(4) {
+  font-size: 0.9rem;
+  list-style: url("archivos multimedia/lapiz-labial.png");
+  width: 8%;
+}
+
+.tablaMaquillaje td:nth-child(5) {
+  font-size: 0.9rem;
+}
+
+.tablaMaquillaje td:nth-child(6) {
+  text-align: center;
+  font-size: 1rem;
+  width: 10%;
+}
+
+/* Fin Tabla Maquillaje */
+/* Página Fragancias */
+.tituloFragancias {
+  font-size: 50px;
+  font-style: italic;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+}
+
+.imagenes {
+  width: 100%;
+}
+
+.imagenes img {
+  width: 25%;
+  opacity: 70%;
+  border-style: outset;
+  border-color: #da1540;
+}
+
+.imagenes-1 {
+  height: 180px;
+}
+
+.imagenes-2 {
+  height: 270px;
+}
+
+.imagenes-3 {
+  height: 360px;
+}
+
+.imagenes-4 {
+  height: 450px;
+}
+
+/* Fin Sección Fragancias Bucle */
+/* Inicio Tabla Fragancias */
+.tablaFragancias {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.fragancia-Girl {
+  background-image: url("archivos multimedia/imagenes fragancias/Girl.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.fragancia-Jasmine {
+  background-image: url("archivos multimedia/imagenes fragancias/Jasmine.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.fragancia-LaBelle {
+  background-image: url("archivos multimedia/imagenes fragancias/LaBelle.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.fragancia-Olympea {
+  background-image: url("archivos multimedia/imagenes fragancias/Olympea.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.tablaFragancias td:nth-child(2) {
+  text-align: center;
+  font-size: 0.9rem;
+  width: 15%;
+}
+
+.tablaFragancias td:nth-child(3) {
+  text-align: center;
+  font-size: 0.9rem;
+  width: 40%;
+}
+
+.tablaFragancias td:nth-child(4) {
+  text-align: left;
+  font-size: 0.9rem;
+  list-style: square inside url("archivos multimedia/perfume.png");
+  list-style-position: outside;
+  width: 15%;
+}
+
+.tablaFragancias td:nth-child(5) {
+  text-align: center;
+  font-size: 1rem;
+  width: 10%;
+}
+
+/* Fin Tabla Fragancias */
+/* Página Videos Tutoriales */
+.seccionTutoriales-1 {
+  background-color: #f08f84;
+}
+
+.seccionTutoriales-2 {
+  background-color: #f4aca4;
+}
+
+.seccionTutoriales-3 {
+  background-color: #f8c9c4;
+}
+
+.seccionVideosTutoriales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.tituloVideosTutoriales {
+  font-size: 50px;
+  font-style: italic;
+  padding-top: 1%;
+  padding-left: 5%;
+  padding-bottom: 1%;
+}
+
+/* Inicio Sección Videos de Maquillaje */
+.seccionTutorialesMaquillaje {
+  border-bottom-style: solid;
+  border-top-style: solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.seccionTutorialesMaquillaje h3 {
+  text-align: center;
+  font-size: 35px;
+  font-style: italic;
+  padding-top: 6%;
+}
+
+/* Fin Sección Videos de Maquillaje */
+/* Inicio Sección Videos de Fragancias */
+.seccionTutorialesFragancias {
+  border-bottom-style: solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.seccionTutorialesFragancias h3 {
+  text-align: center;
+  font-size: 35px;
+  font-style: italic;
+  padding-top: 6%;
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+}
+
+/* Fin Sección Videos de Fragancias */
+/* Inicio Sección Videos de Skincare */
+.seccionTutorialesSkincare {
+  border-bottom-style: solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.seccionTutorialesSkincare h3 {
+  text-align: center;
+  font-size: 35px;
+  font-style: italic;
+  padding-top: 6%;
+}
+
+/* Fin Sección Videos de Skincare */
+/* Página Skincare */
+.tituloSkincare {
+  font-size: 50px;
+  font-style: italic;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+}
+
+/* Inicio Tabla Skincare */
+.tablaSkincare {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.skincare-aguaMicelar {
+  background-image: url("archivos multimedia/imagenes skincare/aguaMicelar.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.skincare-exfoliante {
+  background-image: url("archivos multimedia/imagenes skincare/exfoliante.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.skincare-máscaraFacial {
+  background-image: url("archivos multimedia/imagenes skincare/máscaraFacial.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.skincare-toallasDesmaquillantes {
+  background-image: url("archivos multimedia/imagenes skincare/toallasDesmaquillantes.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.tablaSkincare td:nth-child(1) {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.tablaSkincare td:nth-child(2) {
+  text-align: center;
+  font-size: 0.9rem;
+  width: 25%;
+}
+
+.tablaSkincare td:nth-child(3) {
+  text-align: center;
+  font-size: 0.9rem;
+  width: 40%;
+}
+
+.tablaSkincare td:nth-child(4) {
+  text-align: center;
+  font-size: 1rem;
+  width: 10%;
+}
+
+/* Fin Tabla Skincare */
+/* Página Contacto */
+.seccionContacto-1 {
+  background-color: #7de5dd;
+}
+
+.seccionContacto-2 {
+  background-color: #a8ede8;
+}
+
+.seccionContacto-3 {
+  background-color: #d2f6f3;
+}
+
+.tituloContacto {
+  font-size: 50px;
+  font-style: italic;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+}
+
+/* Inicio Carousel */
+.carousel-caption {
+  color: #fd1515;
+  background-color: #f6f6f6;
+  font-size: 100px;
+  font-style: italic;
+}
+
+.carousel-caption p {
+  color: #fd1515;
+  background-color: #f6f6f6;
+  font-size: 30px;
+  font-style: italic;
+}
+
+/* Fin Carousel */
+.subtituloContacto {
+  font-size: 40px;
+  font-style: italic;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #ec7265;
+  margin: 0%;
+}
+
+/* Inicio Sección Datos Contacto */
+.seccionContacto-1 {
+  border-top: solid;
+  border-bottom: solid;
+}
+
+.seccionContacto-1 ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+.seccionContacto-1 ul li {
+  font-size: 23px;
+  font-style: italic;
+  line-height: 50px;
+}
+
+.seccionContacto-2 p {
+  font-size: 25px;
+  font-style: italic;
+  text-align: center;
+  line-height: 50px;
+}
+
+.seccionContacto-2 form {
+  padding-left: 10%;
+  border-bottom: solid;
+  font-size: 21px;
+  font-style: italic;
+  line-height: 50px;
+  padding-bottom: 1%;
+}
+
+.tipo1 {
+  width: 400px;
+  height: 30px;
+  margin-left: 2%;
+  font-size: 1rem;
+}
+
+.tipo2 input {
+  margin-left: 5%;
+}
+
+.tipo2 span {
+  margin-left: 2%;
+}
+
+.tipo3 {
+  width: 80%;
+  height: 300px;
+  font-size: 1rem;
+}
+
+.tipo4 {
+  width: 200px;
+  height: 44.5px;
+}
+
+/* Fin Sección Datos Contacto */
+.Ooops {
+  text-shadow: 2px 2px 5px #000000;
+  color: #fd1515;
+  text-align: center;
+  font-size: 100px;
+}
+
+.error {
+  text-shadow: 2px 2px 5px #000000;
+  font-size: 80px;
+  color: #fd1515;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.error img {
+  width: 225px;
+  -webkit-animation-name: labios;
+          animation-name: labios;
+  -webkit-animation-duration: 4.5s;
+          animation-duration: 4.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.info {
+  text-align: center;
+  font-size: 25px;
+  padding-top: 5px;
+}
+
+.info a {
+  text-shadow: 2px 2px 5px #000000;
+  color: #fd1515;
+  font-weight: 110;
+  font-weight: 500;
+}
+
+.opciones {
+  list-style-type: none;
+  text-align: center;
+}
+
+.opciones a {
+  text-shadow: 2px 2px 5px #000000;
+  color: #fd1515;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+li a:hover {
+  color: #53DCD2;
+}
+
+.info a:hover {
+  color: #53DCD2;
+}
+
+@-webkit-keyframes labios {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes labios {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,118 @@
+/* Página Contacto */
+
+@for $in from 1 through 3 {
+  .seccionContacto-#{$in} {
+    background-color: lighten($colorseccionverde, $in * 10%);
+  }
+}
+
+.tituloContacto {
+  @extend .textShadow;
+  font-size: 50px;
+  font-style: italic;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+}
+
+/* Inicio Carousel */
+
+.carousel-caption {
+  @extend .textShadow;
+  color: $color2;
+  background-color: #f6f6f6;
+  font-size: 100px;
+  font-style: italic;
+
+  p {
+    @extend .textShadow;
+    color: $color2;
+    background-color: #f6f6f6;
+    font-size: 30px;
+    font-style: italic;
+  }
+}
+
+/* Fin Carousel */
+
+.subtituloContacto {
+  @extend .textShadow;
+  font-size: 40px;
+  font-style: italic;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: $colorseccionrosa;
+  margin: 0%;
+}
+
+/* Inicio Sección Datos Contacto */
+
+.seccionContacto-1 {
+  @extend .textShadow;
+  border-top: solid;
+  border-bottom: solid;
+
+  ul {
+    list-style-type: none;
+    text-align: center;
+
+    li {
+      @extend .textShadow;
+      font-size: 23px;
+      font-style: italic;
+      line-height: 50px;
+    }
+  }
+}
+
+.seccionContacto-2 {
+  @extend .textShadow;
+
+  p {
+    font-size: 25px;
+
+    font-style: italic;
+    text-align: center;
+    line-height: 50px;
+  }
+
+  form {
+    padding-left: 10%;
+    border-bottom: solid;
+    font-size: 21px;
+    font-style: italic;
+    line-height: 50px;
+    padding-bottom: 1%;
+  }
+}
+
+.tipo1 {
+  width: 400px;
+  height: 30px;
+  margin-left: 2%;
+  font-size: 1rem;
+}
+
+.tipo2 {
+  input {
+    margin-left: 5%;
+  }
+
+  span {
+    margin-left: 2%;
+  }
+}
+
+.tipo3 {
+  width: 80%;
+  height: 300px;
+  font-size: 1rem;
+}
+
+.tipo4 {
+  width: 200px;
+  height: 44.5px;
+}
+
+/* Fin Sección Datos Contacto */
